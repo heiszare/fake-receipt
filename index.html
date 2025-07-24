@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Bank Tejarat</title>
+<link rel="stylesheet" href="">
+</head>
+<body>
+	<main>
+		<header>
+			<img src="./tejarat-logo.png" alt="tejarat bank logo">
+			<span>
+				<b>TejaratBank.ir</b>
+				<small>پشتیبانی : ۱۵۵۴</small>
+			</span>
+		</header>
+		<ul>
+			<li>
+				<b>وضعیت</b>
+				<small id="now-pay">در حال انجام</small>
+			</li>
+			<li>
+				<b>نوع تراکنش</b>
+				<small>انتقال وجه / پایا</small>
+			</li>
+			<li>
+				<b>حساب مبدا</b>
+				<small>۵۰********۳۷</small>
+			</li>
+			<li>
+				<b>شبا مقصد</b>
+				<small>IR292738281892819196</small>
+			</li>
+			<li>
+				<b>نام صاحب شبا</b>
+				<small>نگون بخت تاریخ</small>
+			</li>
+			<li>
+				<b>تاریخ و زمان</b>
+				<small id="date-plain">
+					<script type="text/javascript">
+						let date=new Date(),
+						options={hour:'2-digit',minute:'2-digit',year:'numeric',month:'numeric',day:'numeric'};
+						document.querySelector('#date-plain').textContent=date.toLocaleString('fa-IR',options);
+					</script>
+				</small>
+			</li>
+			<li>
+				<b>شماره پیگیری</b>
+				<small>637663754</small>
+			</li>
+			<li>
+				<b>شماره مرجع</b>
+				<small>76528543</small>
+			</li>
+			<li>
+				<b>مبلغ</b>
+				<small id="price">100,000</small>
+			</li>
+			<li>
+				<b>بابت</b>
+				<small>سایر</small>
+			</li>
+			
+		</ul>
+		<footer>همراه بانک تجارت</footer>
+	</main>
+</body>
+</html>

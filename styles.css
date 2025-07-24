@@ -1,0 +1,102 @@
+	@font-face{
+		font-family:'vazir';
+		src:url('./Vazir.ttf');
+	}
+	*{
+		margin:0px;
+		padding:0px;
+		font-family:vazir;
+		font-size:13px;
+	}body{
+		width:100%;
+		height:100vh;
+		background-color:rgb(18,98,185);
+		display:grid;
+		place-items:center;
+	}
+	main{
+		width:85%;
+		max-width:500px;
+		direction:rtl;
+	}
+	ul::after{
+		content:'این یک رسید جعلی است';
+		position:absolute;
+		top:0%;
+	}
+	header{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	}
+	header img{
+		height:50px;
+	}
+	header span{
+		width:max-content;
+		display:flex;
+		flex-direction:column;
+		text-align:left;
+	}
+	header span *{
+		color:white;
+	}
+	header span b{
+		font-size:16px;
+	}
+	ul{
+	width:100%;
+	padding:15px;
+	box-sizing:border-box;
+	background-color:white;
+	background-image:url('./pattern1.png'),url('./logo-mark.png'),url('./pattern2.png');
+	background-size:10px 6px,80% auto,10px 6px;
+	background-repeat:repeat-x,no-repeat,repeat-x;
+	background-position:top left,center center,bottom left;
+	list-style:none;
+	position:relative;
+	margin-top:5px;
+	}
+	ul li{
+		width:100%;
+		padding-block:4px;
+		position:relative;
+		display:flex;
+		flex-flow:row nowrap;
+		justify-content:space-between;
+		align-items:center;
+		border-bottom:1px solid rgb(230,230,250);
+		text-shadow:0px 0px 0px 10px red;
+	}
+	ul li :where(b,small){
+		padding:4px;
+		color:gray;
+		position:relative;
+		display:block;
+	}
+	#now-pay{
+		padding-left:25px;
+		background-image:url('./time.png');
+		background-size:15px auto;
+		background-repeat:no-repeat;
+		background-position:center left;
+		filter:saturate(260%);
+	}
+	#price{
+		color:rgb(9,180,116);
+		font-weight:bold;
+	}
+	#price::after{
+		content:'ریال';
+		color:gray;
+		font-weight:normal;
+		margin-right:5px;
+	}
+	footer{
+		margin-top:10px;
+		text-align:center;
+		font-size:17px;
+		font-weight:bold;
+		color:white;
+	}
